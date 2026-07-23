@@ -1,0 +1,9 @@
+.claude/
+FunTable.nb.bak
+CLAUDE.md
+lib/
+data/
+cluster/
+scripts/
+doc/
+*.m
