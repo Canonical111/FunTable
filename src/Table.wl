@@ -597,7 +597,7 @@ functablePacked=functablePacked[[All,All,;;\[CapitalDelta]max*halfstep+1]];
 Print["Genereate 1d power series"];
 seriespair=asymp2dfast[N[lp1["dphi"],50],lp1["order"]];
 Print["Done"];
-functablePacked=Transpose[functablePacked+asympspinlist[N[lp1["dphi"],50],seriespair,spinlist,\[CapitalDelta]max,normedInternal],{1,3,2}];
+functablePacked=Transpose[functablePacked+asympspinlist[N[lp1["dphi"],50],seriespair,spinlist,\[CapitalDelta]max,normedInternal,nmax],{1,3,2}];
 If[OptionValue["normed"],functablePacked=If[normedInternal,
 normtoprodCompile3dPoly[spinlist,halfstep,dphi,\[CapitalDelta]table2[[;;\[CapitalDelta]max*halfstep+1]]],
 normtoprodCompile3d[spinlist,halfstep,dphi,\[CapitalDelta]table2[[;;\[CapitalDelta]max*halfstep+1]]]
